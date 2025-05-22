@@ -17,7 +17,6 @@ export type SealDescriptor = {
 
 
 export interface Schema<T> {
-  /** @internal */
   __$rules: Array<(input: T) => [boolean, string]>
 }
 

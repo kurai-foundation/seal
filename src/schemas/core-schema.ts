@@ -16,7 +16,6 @@ export default class CoreSchema<T, MetaExtension = any> implements Schema<T> {
   /**
    * Array of validation rules to apply to input values.
    * Each rule returns a tuple [isValid, errorMessage].
-   * @internal
    */
   public readonly __$rules: Array<(input: T) => [boolean, string]>
 

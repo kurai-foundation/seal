@@ -1,6 +1,6 @@
 import BasePrimitive from "~/schemas/primitives/base-primitive"
 import ComposeSchema from "~/schemas/utils/compose-schema"
-import BaseSchema from "./base-schema"
+import BaseSchema, { NullableSchema, OptionalSchema } from "./base-schema"
 import ArraySchema from "./composite/array-schema"
 import DateSchema from "./composite/date-schema"
 import ObjectSchema from "./composite/object-schema"
@@ -12,6 +12,7 @@ import AllOfSchema from "./utils/all-of-schema"
 import AnyOfSchema from "./utils/any-of-schema"
 import NotSchema from "./utils/not-schema"
 import OneOfSchema from "./utils/one-of-schema"
+
 
 export {
   // Composite
@@ -33,5 +34,8 @@ export {
   BaseSchema,
   CoreSchema,
   BasePrimitive,
-  ComposeSchema
+  ComposeSchema,
+
+  OptionalSchema,
+  NullableSchema
 }
