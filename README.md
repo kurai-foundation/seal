@@ -31,9 +31,7 @@ yarn add seal-validator
 ## Quick Start
 
 ```ts
-import Seal from "seal-validator"
-
-const seal = new Seal()
+import { seal } from "@sigiljs/seal"
 
 // Define a user schema
 const userSchema = seal.object({
