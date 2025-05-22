@@ -20,7 +20,7 @@ export default defineConfig({
     lib: {
       entry: {
         "seal": path.resolve(__dirname, "src/index.ts"),
-        "schemas": path.resolve(__dirname, "src/schemas/index.ts"),
+        "schemas": path.resolve(__dirname, "src/schemas/index.ts")
       },
       name: "seal",
       formats: ["es", "cjs"]
