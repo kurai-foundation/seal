@@ -80,6 +80,16 @@ export default class Seal {
   }
 
   /**
+   * Retrieve metadata descriptor of specific schema.
+   *
+   * @param schema The BaseSchema instance.
+   * @returns schema metadata descriptor.
+   */
+  public exportMetadataOf(schema: BaseSchema<any>) {
+    return schema.__$exportMetadata()
+  }
+
+  /**
    * Create a oneOf schema requiring exactly one sub-schema to match.
    * @param schemas List of BaseSchema instances.
    * @returns A OneOfSchema combining the given schemas.
