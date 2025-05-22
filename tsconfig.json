@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
+    "stripInternal": true,
     "moduleResolution": "NodeNext",
     "declaration": true,
     "outDir": "./dist",
