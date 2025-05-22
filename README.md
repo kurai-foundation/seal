@@ -22,9 +22,9 @@ A lightweight, TypeScript-first runtime data validator with a fluent, chainable 
 Install via npm or yarn:
 
 ```bash
-npm install seal-validator
+npm install @sigiljs/seal
 # or
-yarn add seal-validator
+yarn add @sigiljs/seal
 ```
 
 
