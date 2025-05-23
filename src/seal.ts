@@ -1,16 +1,19 @@
-import {
-  AllOfSchema,
-  AnyOfSchema,
-  ArraySchema,
-  BaseSchema,
-  BooleanSchema,
-  DateSchema,
-  NotSchema,
-  NumberSchema,
-  ObjectSchema,
-  OneOfSchema,
-  StringSchema
-} from "./schemas"
+import { default as BasePrimitive } from "./schemas/primitives/base-primitive"
+import { default as ComposeSchema } from "./schemas/utils/compose-schema"
+import { default as BaseSchema, NullableSchema, OptionalSchema } from "./schemas/base-schema"
+import { default as ArraySchema } from "./schemas/composite/array-schema"
+import { default as DateSchema } from "./schemas/composite/date-schema"
+import { default as ObjectSchema } from "./schemas/composite/object-schema"
+import { default as CoreSchema } from "./schemas/core-schema"
+import { default as BooleanSchema } from "./schemas/primitives/boolean-schema"
+import { default as NumberSchema } from "./schemas/primitives/number-schema"
+import { default as StringSchema } from "./schemas/primitives/string-schema"
+import { default as AllOfSchema } from "./schemas/utils/all-of-schema"
+import { default as AnyOfSchema } from "./schemas/utils/any-of-schema"
+import { default as NotSchema } from "./schemas/utils/not-schema"
+import { default as OneOfSchema } from "./schemas/utils/one-of-schema"
+
+export { BaseSchema, BasePrimitive, ComposeSchema, CoreSchema, NullableSchema, OptionalSchema }
 
 /**
  * Entry point for building and using schema validators.
