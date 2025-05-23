@@ -13,7 +13,27 @@ import { default as AnyOfSchema } from "./schemas/utils/any-of-schema"
 import { default as NotSchema } from "./schemas/utils/not-schema"
 import { default as OneOfSchema } from "./schemas/utils/one-of-schema"
 
-export { BaseSchema, BasePrimitive, ComposeSchema, CoreSchema, NullableSchema, OptionalSchema }
+export {
+  BaseSchema,
+  CoreSchema,
+  NullableSchema,
+  OptionalSchema,
+
+  BasePrimitive,
+  StringSchema,
+  NumberSchema,
+  BooleanSchema,
+
+  ComposeSchema,
+  ObjectSchema,
+  ArraySchema,
+  DateSchema,
+
+  AnyOfSchema,
+  OneOfSchema,
+  NotSchema,
+  AllOfSchema
+}
 
 /**
  * Entry point for building and using schema validators.
