@@ -26,7 +26,7 @@ export default defineConfig({
       formats: ["es", "cjs"]
     },
     rollupOptions: {
-      external: [...builtinModules, "joi", "express", "cors"],
+      external: [...builtinModules],
       output: { exports: "named" }
     },
     commonjsOptions: { transformMixedEsModules: true },
