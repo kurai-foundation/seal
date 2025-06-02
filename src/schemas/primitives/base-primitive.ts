@@ -16,7 +16,9 @@ export default class BasePrimitive<T, MetaExtension = any> extends BaseSchema<T,
     // Store allowed values in metadata and add a rule to enforce inclusion
     return this.$metadata({ valid: input } as any)
       .$add(value => [
-        input.includes(value as T),
+        (() => {
+          return input.includes(value as T)
+        })(),
         `${ value } is not allowed`
       ])
   }
@@ -31,7 +33,9 @@ export default class BasePrimitive<T, MetaExtension = any> extends BaseSchema<T,
     // Store disallowed values in metadata and add a rule to enforce exclusion
     return this.$metadata({ invalid: input } as any)
       .$add(value => [
-        !input.includes(value as T),
+        (() => {
+          return !input.includes(value as T)
+        })(),
         `${ value } is not allowed`
       ])
   }

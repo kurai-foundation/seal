@@ -139,7 +139,7 @@ export default class StringSchema extends BasePrimitive<string, Partial<SealDesc
    */
   public alphanumeric() {
     const re = /^[a-zA-Z0-9]+$/
-    return this.$metadata({ "x-format": "alphanumeric" }).pattern(re)
+    return this.$metadata({ "format": "alphanumeric" }).pattern(re)
   }
 
   /**
